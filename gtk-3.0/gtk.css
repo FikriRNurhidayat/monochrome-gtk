@@ -1,0 +1,249 @@
+@define-color fg_color black;
+@define-color bg_color white;
+
+window decoration {
+  background: @bg_color;
+}
+
+.thunar .sidebar scrollbar {
+  opacity: 0;
+}
+
+* {
+  all: unset;
+}
+
+window,
+dialog,
+.background {
+  background: @bg_color;
+  color: @fg_color;
+}
+
+label {}
+
+headerbar,
+menubar,
+toolbar {
+  padding: .5em;
+  background: @bg_color;
+  color: @fg_color;
+  margin-bottom: 1em;
+}
+
+headerbar button,
+menubar menuitem,
+tabs tab {
+  border: none;
+  padding: .5em 1em;
+}
+
+entry,
+button,
+textview,
+text,
+menu menuitem,
+tab,
+list row {
+  padding: .5em;
+}
+
+button.color {
+  padding: 0;
+}
+
+button.link {
+  padding: 0;
+  border: none;
+}
+
+switch {
+	background: @bg_color;
+ 	border: 1px solid @fg_color;
+}
+
+switch slider {
+  background: @fg_color;
+}
+
+
+button.link label {
+  text-decoration: underline;
+}
+
+viewport,
+menu,
+frame border, popover,
+textview {
+  border: 1px solid @fg_color;
+}
+
+frame border {
+  padding: 1em;
+}
+
+entry, button {
+  background: @bg_color;
+  color: @fg_color;
+  border: 1px solid @fg_color;
+}
+
+scrollbar {
+  border: none;
+  background: transparent;
+  margin: .5em;
+}
+
+scrollbar button {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+scrollbar slider {
+  background: @fg_color;
+}
+
+slider,
+trough {
+  background: @bg_color;
+  border: 1px solid @fg_color;
+}
+
+slider {
+  padding: .1em;
+  border-radius: .1em;
+}
+
+progressbar progress, scale highlight {
+  background: @fg_color;
+}
+
+check,
+radio {
+  padding: 0 .5em;
+  border: 1px solid @fg_color;
+  margin-right: 1em;
+}
+
+treeview {
+  padding: .5em;
+}
+
+treeview:selected {
+  background: @fg_color;
+  color: @bg_color;
+}
+
+treeview header button {
+  border-right: none;
+  margin-bottom: 1em;
+}
+
+treeview header button:last-child {
+  border-right: 1px solid @fg_color;
+}
+
+tooltip {
+  border: 1px solid @fg_color;
+  color: @fg_color;
+  background: @bg_color;
+}
+
+accelerator {
+  color: transparent;
+  font-size: 0;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+selection {
+  background: @fg_color;
+  color: @bg_color;
+}
+
+button:hover,
+row:hover,
+menuitem:hover {
+  color: grey;
+}
+
+button:active,
+button:selected,
+row:active,
+row:selected,
+menuitem:active,
+menuitem:selected {
+  background: @fg_color;
+  color: @bg_color;
+}
+
+*:disabled {
+  color: grey;
+}
+
+*:focus {
+}
+
+combobox {
+  border: 1px solid @fg_color;
+}
+
+button.combo,
+entry.combo,
+combobox .linked {
+  border: none;
+  color: @fg_color;
+}
+
+button:checked,
+tab:checked {
+  background: @fg_color;
+  color: @bg_color;
+}
+
+box.linked.vertical entry {
+  border: 1px solid @fg_color;
+  border-bottom: none;
+}
+
+box.linked.vertical entry:last-child {
+  border-bottom: 1px solid @fg_color;
+}
+
+toolbar.vertical button,
+box.linked.vertical button {
+  padding: .5em;
+  border-bottom: none;
+}
+
+toolbar.vertical button:last-child,
+box.linked.vertical button:last-child {
+  border-bottom: 1px solid @fg_color;
+}
+
+box.linked.horizontal entry {
+  padding: 0 0.5em;
+  border-right: none;
+}
+
+box.linked.horizontal entry:last-child {
+  border-right: 1px solid @fg_color;
+}
+
+tab button {
+  margin-left: 1em;
+  border: none;
+  background: transparent;
+}
+
+tab:checked button {
+  color: @bg_color;
+}
+
+.dialog-vbox,
+.dialog-hbox {
+  padding: 1em;
+}

@@ -1,0 +1,4 @@
+@import url("./gtk.css");
+
+@define-color fg_color white;
+@define-color bg_color black;
